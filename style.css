@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+    background-color: #1f2937;
+    padding-bottom: 50px;
+    max-width: 100%;    
+}
+
+.first-level-header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 280px;
+}
+
+.first-level-header h1{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.second-level-header{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.second-level-header h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.second-level-header p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.second-left{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.second-right{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+}
+
+.btn{
+    padding: 5px 15px;
+}
+
+/*content css start*/
+
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-around;
+    padding: 10px;
+    background-color: rgb(172, 143, 143);
+}
+
+.content-header{
+    text-align: center;
+}
+
+.img-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
