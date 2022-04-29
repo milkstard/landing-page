@@ -3,19 +3,22 @@
 }
 
 body{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
     margin: 0;
     padding: 0;
-    max-width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
 }
 
 .header{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     gap: 10px;
+    align-items:stretch;
     background-color: #1f2937;
     padding: 10px 50px 50px 50px;
     /*padding-bottom: 50px;*/
@@ -23,7 +26,7 @@ body{
 
 .first-level-header{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     /*gap: 737px;*/
 }
@@ -40,7 +43,7 @@ body{
 ul{
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     gap: 10px;
     padding: 10px;
 }
@@ -53,7 +56,7 @@ a{
 
 .second-level-header{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     column-gap: 50px;
 }
 
@@ -70,14 +73,18 @@ a{
 
 .second-left{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .second-right{
     display: flex;
-    flex-flow: row wrap;
-    margin: auto;
+    flex-flow: row nowrap;
+    /*margin: auto;*/
     /*margin-left: auto;*/
+}
+
+.second-right-container{
+    margin-left: auto;
 }
 
 .second-right img{
@@ -98,7 +105,7 @@ a{
 
 .content{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: space-around;
     padding: 10px;
     background-color: rgb(245, 236, 236);
@@ -113,13 +120,21 @@ a{
     color: #1f2937;
 }
 
+.first-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+}
+
 .img-container{
     display: flex;
 }
 
 .img-content{ 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     padding: 10px;
 }
